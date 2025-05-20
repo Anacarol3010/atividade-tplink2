@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="..styles/styles.css">
-    <title>Template Electron</title>
+   <link rel="stylesheet" href="../styles/styles.css">
+  
 </head>
 <body>
-    <h1>Template Electron </h1>
-    <p> Template Electron App</p>
+   <div class="login-container">
+    <h2>TP-Link | Acesso ao Roteador</h2>
+    <div id="login-form">
+      <label for="usuario">Usuário</label>
+      <input type="text" id="usuario" placeholder="Digite seu usuário" required />
 
-        <button onclick="mostrar_informacao()" >Clica aqui</button>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Digite sua senha" required />
 
-    <script src="../js/script.js"></script>
-     
-    <script>
-      function mostrar_informacao() {
-        console.log("Ana carolina")
-        console.log("40 anos")
-       
-    }
-      console.log('Ola mundo!');
+      <label for="codigo">Código de Instalação</label>
+      <input type="text" id="codigo" placeholder="Digite o código" required />
 
-      var nome = 'Ana carolina'
+      <button id="botaoEntrar">Entrar</button>
+      <div class="error-message" id="error-msg">Credenciais inválidas. Tente novamente.</div>
+    </div>
+  </div>
+    
+  <script src="../js/script.js"></script>
 
-      console.log(nome);
-    </script>
-</body>
+ </body>
 </html>
